@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root{
+    --font-main: 'Poppins', sans-serif; 
+    --color-main: #FF8427;
+    --color-white: white;
+    --color-gray: #E1E1E1;  
+}
+
+body{
+    background-color: var(--color-main);
+    font-family: var(--font-main);
+    font-weight: 700;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 428px;
+    position: relative;
+}
+
+.login__imagem{
+    width: 100%;
+    height: 100%;
+}
+
+.login__opcoes__login{
+    font-size: 32px;
+    color: var(--color-gray);
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+.login__opcoes__descricao{
+    font-size: 16px;
+    color: var(--color-gray);
+    text-align: left;
+    margin-top: 5%;
+}
+
+.login__opcoes__nomeUsuario{
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--color-gray);
+    border: transparent;
+    border-radius: 25px;
+    padding: 1.5% 0;
+}
+
+.login__opcoes__nomeUsuario::placeholder{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-align-last: center;
+    color: var(--color-main);
+    background-image: url("../img/icon_arroba.png");
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+.login__opcoes__Senha{
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--color-gray);
+    border: transparent;
+    border-radius: 25px;
+    padding: 1.5% 0;
+}
+
+.login__opcoes__Senha::placeholder{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-main);
+    background-image: url("../img/icon_senha.png");
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+.login__opcoes__loginButton{
+    font-size: 24px;
+    font-family: var(--font-main);
+    color: var(--color-white);
+    background: var(--color-main);
+    border: 2px solid rgba(225, 225, 225, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 8% 0;
+    padding: 2% 0;
+    width: calc(100% + 40px);
+    margin-left: -20px; 
+    margin-right: -20px;
+}
+
+.login__opcoes__ou{
+    color: var(--color-white);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5% 0;
+}
+
+.login__opcoes__icones{
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.login__opcoes__cadastrar{
+    color: var(--color-gray);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 800px) {
+    .login__opcoes__login{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
